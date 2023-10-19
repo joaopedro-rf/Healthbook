@@ -4,9 +4,16 @@ package com.example.Healthbook.DTO;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
-import lombok.Data;
+import lombok.*;
 
-@Data
+
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@EqualsAndHashCode
+@Builder
+@Getter
+@Setter
 public class PacientDTO {
 
     @NotEmpty(message = "Pacient's name must not be empty")

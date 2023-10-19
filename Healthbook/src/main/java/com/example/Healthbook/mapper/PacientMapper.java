@@ -7,12 +7,14 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring")
-public abstract class PacientMapper {
-    public static final PacientMapper INSTANCE = Mappers.getMapper(PacientMapper.class);
-    public abstract Pacient fromPacient(PacientDTO pacientDTO);
-    public abstract PacientDTO toPacient(Pacient pacient);
-    public abstract List<PacientDTO> toPacients(List<Pacient> pacient);
+
+public interface PacientMapper {
+
+    PacientMapper INSTANCE = Mappers.getMapper(PacientMapper.class);
+    Pacient fromPacient(PacientDTO pacientDTO);
+    PacientDTO toPacient(Pacient pacient);
+    List<PacientDTO> toPacients(List<Pacient> pacient);
+    List<Pacient> fromPacients(List<PacientDTO> pacient);
 
 }
 

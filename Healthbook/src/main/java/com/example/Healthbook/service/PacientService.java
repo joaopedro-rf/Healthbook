@@ -11,12 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.FieldError;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -31,10 +27,13 @@ public class PacientService{
 
     public Page<Pacient> findAllPacients(Pageable pageable){
 
-
         //List<PacientDTO> pacientDTO = PacientMapper.INSTANCE.toPacients(pacientRepository.findAll());
         //Quando adicionar roles ADMIN usar a linha acima
         return pacientRepository.findAll(pageable);
+    }
+
+    public List<Pacient> findAllPacientsNonPageable(){
+        return pacientRepository.findAll();
     }
 
     public Optional<Pacient> findPacientByIdOrThrowBadRequestException(Long id){
@@ -70,7 +69,7 @@ public class PacientService{
     public Pacient updatePacient(Long id, PacientDTO pacientDTO ){
         findPacientByIdOrThrowBadRequestException(id);
         Pacient pacient = PacientMapper.INSTANCE.fromPacient(pacientDTO);
-        pacient.setId(id);
+        //pacient.setId(id);
 
         /*
         if (bindingResult.hasErrors()) {
@@ -82,9 +81,7 @@ public class PacientService{
         }
         */
 
-        return pacientRepository.save(PacientMapper.INSTANCE.fromPacient(pacientDTO));
-
-
+        return pacientRepository.save(pacient);
     }
 
 }

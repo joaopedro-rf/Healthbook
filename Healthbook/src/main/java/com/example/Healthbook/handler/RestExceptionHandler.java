@@ -52,7 +52,7 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
                         .title("Bad Request Exception, Invalid Fields")
                         .details("Check the field(s) for errors")
                         .developerMessage(ex.getClass().getName())
-                        .fiels(fields)
+                        .fields(fields)
                         .fieldsMessage(fieldsMessage)
                         .build(),HttpStatus.BAD_REQUEST);
 

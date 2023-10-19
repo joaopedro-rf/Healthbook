@@ -29,7 +29,6 @@ public class PacientController {
 
     @GetMapping
     public ResponseEntity<Page<Pacient>> getAllPacients(Pageable pageable){
-        log.info(dateUtil.formatLocalDateTimeToDatabaseStyle(LocalDateTime.now()));
         return new ResponseEntity<>(pacientService.findAllPacients(pageable), HttpStatus.OK);
     }
 
@@ -37,6 +36,11 @@ public class PacientController {
     public ResponseEntity<Page<Pacient>> getPacientByName(@RequestParam String name, Pageable pageable){
         Page<Pacient> pacient = pacientService.findPacientByName(name, pageable);
         return new ResponseEntity<>(pacient, HttpStatus.OK);
+    }
+
+    @GetMapping("/all")
+    public ResponseEntity<List<Pacient>> getAllPacients(){
+        return new ResponseEntity<>(pacientService.findAllPacientsNonPageable(), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
@@ -59,8 +63,9 @@ public class PacientController {
     @PutMapping("/{id}")
     public ResponseEntity<Pacient> updatePacient(@PathVariable Long id,@Valid @RequestBody PacientDTO pacientDTO)
     {
-        Pacient updatedPacient = pacientService.updatePacient(id,pacientDTO);
-        return new ResponseEntity<>(updatedPacient, HttpStatus.OK);
+        Pacient pacient = pacientService.updatePacient(id,pacientDTO);
+
+        return new ResponseEntity<>(pacient, HttpStatus.OK);
     }
 
 

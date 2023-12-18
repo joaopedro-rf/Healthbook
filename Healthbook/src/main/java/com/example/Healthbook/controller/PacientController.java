@@ -19,13 +19,10 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/pacients")
-@Log4j2
+@RequestMapping("/api/pacients")
 public class PacientController {
     @Autowired
     private PacientService pacientService;
-    @Autowired
-    private DateUtil dateUtil;
 
     @GetMapping
     public ResponseEntity<Page<Pacient>> getAllPacients(Pageable pageable){

@@ -20,16 +20,16 @@ public class Pacient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
     @NotEmpty(message = "Pacient's name must not be empty")
-    String name;
+    private String name;
     @NotNull(message = "Age should not be null")
     @Positive(message = "Age must be a positive number")
-    int age;
+    private int age;
     @NotEmpty(message = "Phone number must not be empty")
-    String phoneNumber;
+    private String phoneNumber;
     @NotEmpty(message = "Address must not be empty")
-    String address;
+    private String address;
 
 }

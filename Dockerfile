@@ -3,7 +3,7 @@ WORKDIR /app
 
 
 COPY . .
-chmod +x mvnw
+RUN chmod +x mvnw
 RUN ./mvnw clean install
 
 FROM openjdk:20-jdk

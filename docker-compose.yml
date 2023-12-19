@@ -1,26 +1,25 @@
 version: '3.1'
 
-services:
-  my-app:
-    image: healthbook:latest
-    container_name: my-app
-    ports:
-      - "8080:8080"
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://my-postgres:5432/Healthbook
-      - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=root
-      - SPRING_DATASOURCE_DRIVER-CLASS-NAME=org.postgresql.Driver
-      - SPRING_JPA_HIBERNATE_DDL-AUTO=update
-    depends_on:
-      - my-postgres
 
+services:
   my-postgres:
     image: postgres:15.4
-    container_name: my-postgres
+    environment:
+      POSTGRES_DB: Healthbook
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
     ports:
       - "5432:5432"
+
+  my-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - my-postgres
     environment:
-      - POSTGRES_DB=Healthbook
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=root
+      SPRING_DATASOURCE_URL: jdbc:postgresql://my-postgres:5432/Healthbook
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: root
+    ports:
+      - "8080:8080"

@@ -1,0 +1,17 @@
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\client\SpringClient.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\mapper\PacientMapperImpl.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\wrapper\PageableResponse.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\handler\RestExceptionHandler.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\controller\PacientController.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\exception\BadRequestException.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\exception\ValidationExceptionDetails.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\configurer\HealthbookMvcConfigurer.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\HealthbookApplication.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\repositories\PacientRepository.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\model\Pacient.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\util\DateUtil.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\exception\BadRequestExceptionDetails.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\exception\ExceptionDetails.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\mapper\PacientMapper.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\DTO\PacientDTO.java
+C:\Users\João Pedro\Documents\AgendaMedicav2\Healthbook\Healthbook\src\main\java\com\example\Healthbook\service\PacientService.java

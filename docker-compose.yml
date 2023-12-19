@@ -1,0 +1,23 @@
+version: '3.1'
+
+
+services:
+  my-postgres:
+    image: postgres:15.1
+    environment:
+      POSTGRES_DB: Healthbook
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+
+  my-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - my-postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://my-postgres:5432/Healthbook
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: root
+    ports:
+      - "8080:8080"

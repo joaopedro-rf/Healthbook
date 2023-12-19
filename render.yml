@@ -1,0 +1,10 @@
+app:
+  name: my-app
+  image: my-app:latest
+  ports:
+    - 8080:8080
+  steps:
+    - build-and-deploy:
+      command:
+        - docker-compose build
+        - docker-compose up -d

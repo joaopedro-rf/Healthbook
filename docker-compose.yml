@@ -8,8 +8,6 @@ services:
       POSTGRES_DB: Healthbook
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: root
-    ports:
-      - "5432:5432"
 
   my-app:
     build:

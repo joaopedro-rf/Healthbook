@@ -14,7 +14,6 @@ public class SpringClient {
 
         ResponseEntity<Pacient> entity = new RestTemplate().getForEntity("http://localhost:8080/pacients/{id}", Pacient.class, 2);
 
-
         ResponseEntity<List<Pacient>> exchange = new RestTemplate().exchange("http://localhost:8080/pacients/all", HttpMethod.GET, null,
                 new ParameterizedTypeReference<List<Pacient>>() {
                 });

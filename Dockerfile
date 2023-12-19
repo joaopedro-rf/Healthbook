@@ -1,5 +1,5 @@
 FROM maven:3.9.5 AS build
-COPY . .
+COPY Healthbook .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:20-jdk

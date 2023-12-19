@@ -168,7 +168,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<outputDirectory>${project.build.directory}/generated-sources</outputDirectory>
+					<outputDirectory>Healthbook/target/generated-sources</outputDirectory>
 				</configuration>
 			</plugin>
 		</plugins>

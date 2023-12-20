@@ -45,7 +45,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.addAllowedOrigin("http://127.0.0.1:5500");
-        configuration.addAllowedOrigin("https://login-page-evf1l3gpq-joao-pedros-projects-baa2d387.vercel.app");
+        configuration.addAllowedOrigin("https://login-page-nine-nu.vercel.app");
         configuration.addAllowedMethod("GET");
         configuration.addAllowedMethod("POST");
         configuration.addAllowedMethod("PUT");

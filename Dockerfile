@@ -13,7 +13,5 @@ EXPOSE 8080
 
 COPY . .
 
-CMD ["docker-compose", "build"]
-
 ENTRYPOINT ["java", "-jar", "demo.jar"]
 

@@ -23,8 +23,7 @@ public class HealthbookMvcConfigurer implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api")
                 .allowedOrigins("http://127.0.0.1:5500")
-                .allowedOrigins("https://login-page-nine-nu.vercel.app")
-                .allowedOrigins("https://healthclinic.vercel.app/login.html")
+                .allowedOrigins("https://healthclinic.vercel.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("Content-Type", "Authorization")
                 .allowCredentials(true);

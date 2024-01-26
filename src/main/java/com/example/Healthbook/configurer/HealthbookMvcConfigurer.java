@@ -26,4 +26,5 @@ public class HealthbookMvcConfigurer implements WebMvcConfigurer {
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("Content-Type", "Authorization");
     }
+
 }

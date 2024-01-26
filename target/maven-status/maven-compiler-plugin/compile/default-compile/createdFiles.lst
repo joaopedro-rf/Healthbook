@@ -26,7 +26,6 @@ com\example\Healthbook\mapper\PacientMapper.class
 com\example\Healthbook\controller\FullCalendarController.class
 com\example\Healthbook\controller\PacientController.class
 com\example\Healthbook\DTO\AppUserDTO.class
-com\example\Healthbook\controller\TestController.class
 com\example\Healthbook\security\TokenService.class
 com\example\Healthbook\util\DateUtil.class
 com\example\Healthbook\model\Pacient.class

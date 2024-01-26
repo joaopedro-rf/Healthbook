@@ -17,6 +17,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/users")
+@CrossOrigin(origins = "https://healthclinic.vercel.app")
 public class AppUserController {
     @Autowired
     private AppUserService appUserService;

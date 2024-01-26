@@ -1,0 +1,94 @@
+[33m8770414[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m no pre flight
+[33m4427b36[m no pre flight
+[33mf5257e3[m restore
+[33mb82808a[m mvn build
+[33m08e743e[m mvn build
+[33mbc4e09d[m mvn build
+[33m6bafdbc[m mvn build
+[33ma11909b[m mvn build
+[33m53d0da4[m mvn build
+[33m27df05f[m mvn build
+[33m437e700[m -
+[33m4c07e23[m cors config + mvn build
+[33mb897999[m mvn build
+[33mae597e1[m cors limit
+[33m9da7348[m cors handler modify
+[33m92a9378[m cors bean added
+[33md911ce2[m cors error handler
+[33m1ab7e3a[m remove cors Bean
+[33m9c61eb4[m cors api change
+[33me9618fb[m cors api change
+[33m2c52fc9[m cors api change
+[33m25e3e16[m csrf and cors change
+[33me8d9bcc[m csrf and cors change
+[33mc10686e[m -cors allow github
+[33m79a67a7[m -cors allow all sites
+[33md05c11a[m -cors configuration update
+[33md4cae13[m -cors configuration update
+[33ma387fc9[m -cors configuration update
+[33mc713559[m - cors config
+[33m4feb543[m[33m ([m[1;31msource_repo/master[m[33m)[m CORS CONFIG
+[33m3fb2937[m CORS CONFIG
+[33m8e3d12c[m Update SecurityConfig.java
+[33mcbb060b[m Update HealthbookMvcConfigurer.java
+[33m314182c[m Update HealthbookMvcConfigurer.java
+[33m7fef400[m Update SecurityConfig.java
+[33m0e73730[m Update SecurityConfig.java
+[33mcd2b5a5[m Update HealthbookMvcConfigurer.java
+[33m4fdb758[m Update HealthbookMvcConfigurer.java
+[33mef9c6fd[m Update SecurityConfig.java
+[33m7ecf9a5[m Update SecurityConfig.java
+[33m263260b[m Update HealthbookMvcConfigurer.java
+[33m5ecbba9[m configs to deploy on render
+[33ma18d777[m configs to deploy on render
+[33m21a7203[m configs to deploy on render
+[33mc5b9907[m configs to deploy on render
+[33m4cc6168[m configs to deploy on render
+[33me57498f[m configs to deploy on render
+[33m22a4b30[m configs to deploy on render
+[33m4771376[m configs to deploy on render
+[33m084c2b8[m configs to deploy on render
+[33mb8a680d[m Create PostgresConfigurer
+[33mb7bfb40[m Update application.properties
+[33m39d56ff[m Update render.yaml
+[33mbe7cc06[m Update docker-compose.yml
+[33m596a2e8[m Update Dockerfile
+[33mf1b759c[m Update Dockerfile
+[33mb691e6e[m Update Dockerfile
+[33mfdb9afa[m Create MavenWrapperDownloader.java
+[33m1246fb5[m Create maven-wrapper.properties
+[33m1aa74f4[m Delete maven-wrapper.jar
+[33m9079ea7[m Delete maven-wrapper.properties
+[33m2b40e5d[m Delete MavenWrapperDownloader.java
+[33me8ba9a7[m Create maven-wrapper.jar
+[33mf0c49a4[m Add files via upload
+[33mc318f4a[m Update render.yaml
+[33m12ec8ab[m Update Dockerfile
+[33mdbaa7bf[m Update and rename render.yml to render.yaml
+[33ma17548f[m Add files via upload
+[33m138322c[m Add files via upload
+[33mfa10bb3[m Create docker-compose.yml
+[33mb921086[m Delete Healthbook/src directory
+[33m0312f64[m files structure changes
+[33mc2b5107[m files structure changes
+[33m229fd1c[m target files changes
+[33me459485[m docker-compose execute on Dockerfile
+[33m01548a7[m docker-compose execute on Dockerfile
+[33mced75f3[m db url change
+[33mf5b04fd[m Dockerfile path change
+[33m3659e00[m Dockerfile modified and gitignore target taken off
+[33mb0bd5cc[m target commit
+[33m2241c76[m mvnw commit
+[33m0f0a8ce[m Dockerfile modified, skiptests removed
+[33macf4912[m Dockerfile modified
+[33m396cf6b[m Merge remote-tracking branch 'origin/master'
+[33m9cb3ad8[m Change files to correct path
+[33m66bdd00[m Delete .idea directory
+[33m235411d[m Dockerfiles
+[33mc6e659a[m New entity: FullCalendar. Entity changes: AppUser and Pacient. Added: Security Config
+[33m9b3fe56[m docker compose & PacientMapper
+[33m064bf9d[m Updates to make the tests work
+[33m70d893f[m Tests for Pacient entity
+[33m83a148a[m Exception handlers, pacient mapper and basic mvc configurer
+[33mdcbd1cd[m Pacient Entity DAO
+[33mbab4113[m first commit - Initial configuration

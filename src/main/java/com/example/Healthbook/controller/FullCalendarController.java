@@ -13,6 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/calendar")
+@CrossOrigin(origins = "https://healthclinic.vercel.app")
 public class FullCalendarController {
     @Autowired
     private FullCalendarService fullCalendarService;

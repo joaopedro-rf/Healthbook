@@ -44,7 +44,6 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.addAllowedOrigin("http://127.0.0.1:5500");
         configuration.addAllowedOrigin("https://healthclinic.vercel.app");
         configuration.addAllowedMethod("GET");
         configuration.addAllowedMethod("POST");
@@ -52,7 +51,6 @@ public class SecurityConfig {
         configuration.addAllowedMethod("DELETE");
         configuration.addAllowedHeader("Content-Type");
         configuration.addAllowedHeader("Authorization");
-        configuration.setAllowCredentials(true);
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/api/**", configuration);

@@ -20,6 +20,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/pacients")
+@CrossOrigin(origins = "https://healthclinic.vercel.app")
 public class PacientController {
     @Autowired
     private PacientService pacientService;
